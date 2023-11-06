@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/flav.png" type="image/x-icon">
+  <title>Minecraft Chess - Menu</title>
+</head>
+<link rel="stylesheet" href="menu.css">
+<body>
+  <div class="logo-Mine"></div>
+  <!--//- Menu-->
+<div class="mc-menu">
+  <div class="mc-button full">
+    <div class="title">Singleplayer</div>
+  </div>
+  <div class="mc-button full">
+    <div class="title">Multiplayer</div>
+  </div>
+  <div class="mc-button full">
+    <div class="title">Minecraft Realms</div>
+  </div>
+  <div class="double" >
+    <div class="mc-button full" id="options-button">
+      <div class="title">Options</div>
+    </div>
+    <div class="mc-button full">
+      <div class="title">Quit Game</div>
+    </div>
+  </div>
+  
+  <div class="mc-button full lang">
+    <div class="title"><img src="https://i.ibb.co/99187Lk/lang.png" alt=" Lang"/></div>
+  </div>
+</div>
+
+<div id="options-menu" class="hidden">
+  <div style="position: absolute; left: 670px;top: 490px; width: 190px; height: 40px;" class="mc-button" id="minecraftSoundEffects">
+    <div class="title">Sound effects</div>
+  </div>
+  <div style="position: absolute; left: 670px;top: 540px; width: 190px; height: 40px;" class="mc-button" id="minecraftSongs">
+    <div class="title">Songs</div>
+  </div>
+  <div style="position: absolute; left: 670px;top: 590px; width: 190px; height: 40px;" class="mc-button" id="minecraftBiome">
+    <div class="title"> Biome</div>
+  </div>
+  <div class="hidden image-container" id="image-container" >
+    <img id="music-image" width="80px" src="images/songTrue.png" alt="Imagem de Músicas">
+  </div>
+<script src="scriptMenu.js"></script>
+</body>
+</html>
