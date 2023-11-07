@@ -287,6 +287,10 @@ let blackLeftRookRoqueAllowed = true
                     startId - width * 2 + 1 === targetId ||
                     startId - width -2 === targetId ||
                     startId - width +2 === targetId){
+                        if(idEnPassant !== 0){
+                            idEnPassant = 0
+                        }
+                        
                         return true
                 }
                 break;
@@ -323,6 +327,10 @@ let blackLeftRookRoqueAllowed = true
                       startId + width * 6 - 6 === targetId && !document.querySelector(`[square-id="${startId + width - 1}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 2 - 2}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 3 - 3}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 4 - 4}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 5 - 5}"]`).firstChild ||
                       startId + width * 7 - 7 === targetId && !document.querySelector(`[square-id="${startId + width - 1}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 2 - 2}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 3 - 3}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 4 - 4}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 5 - 5}"]`).firstChild && !document.querySelector(`[square-id="${startId + width * 6 - 6}"]`).firstChild 
                       ){
+                        if(idEnPassant !== 0){
+                            idEnPassant = 0
+                        }
+
                         return true
                 }
                 break;
@@ -360,6 +368,9 @@ let blackLeftRookRoqueAllowed = true
                     startId - 6 === targetId && !document.querySelector(`[square-id="${startId - 1}"]`).firstChild && !document.querySelector(`[square-id="${startId - 2}"]`).firstChild && !document.querySelector(`[square-id="${startId - 3}"]`).firstChild && !document.querySelector(`[square-id="${startId - 4}"]`).firstChild && !document.querySelector(`[square-id="${startId - 5}"]`).firstChild ||
                     startId - 7 === targetId && !document.querySelector(`[square-id="${startId - 1}"]`).firstChild && !document.querySelector(`[square-id="${startId - 2}"]`).firstChild && !document.querySelector(`[square-id="${startId - 3}"]`).firstChild && !document.querySelector(`[square-id="${startId - 4}"]`).firstChild && !document.querySelector(`[square-id="${startId - 5}"]`).firstChild && !document.querySelector(`[square-id="${startId - 6}"]`).firstChild 
                     ){
+                        if(idEnPassant !== 0){
+                            idEnPassant = 0
+                        }
 
                         if(whiteRightRookRoqueAllowed === true && startId === 63){
                             whiteRightRookRoqueAllowed = false
@@ -443,6 +454,10 @@ let blackLeftRookRoqueAllowed = true
                     startId - 6 === targetId && !document.querySelector(`[square-id="${startId - 1}"]`).firstChild && !document.querySelector(`[square-id="${startId - 2}"]`).firstChild && !document.querySelector(`[square-id="${startId - 3}"]`).firstChild && !document.querySelector(`[square-id="${startId - 4}"]`).firstChild && !document.querySelector(`[square-id="${startId - 5}"]`).firstChild ||
                     startId - 7 === targetId && !document.querySelector(`[square-id="${startId - 1}"]`).firstChild && !document.querySelector(`[square-id="${startId - 2}"]`).firstChild && !document.querySelector(`[square-id="${startId - 3}"]`).firstChild && !document.querySelector(`[square-id="${startId - 4}"]`).firstChild && !document.querySelector(`[square-id="${startId - 5}"]`).firstChild && !document.querySelector(`[square-id="${startId - 6}"]`).firstChild 
                           ){
+                            if(idEnPassant !== 0){
+                                idEnPassant = 0
+                            }
+
                             return true
                           }
                           break;
@@ -460,6 +475,10 @@ let blackLeftRookRoqueAllowed = true
                        startId - width - 1 === targetId ||
                        startId - width + 1 === targetId 
                     ){
+                        if(idEnPassant !== 0){
+                            idEnPassant = 0
+                        }
+                        
                         if(whiteKingRoqueAllowed === true && startId === 60){
                             whiteKingRoqueAllowed = false
                         }

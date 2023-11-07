@@ -1,5 +1,5 @@
-const whiteKing = '<div class="piece" id="king"><img src="images/pieces/steveKing.png"></img><audio src="sounds Minecraft/cow01.mp3"></audio></div>'
-const whiteQueen = '<div class="piece" id="queen"><img src="images/pieces/alexQueen.jpg"></img><audio src="sounds Minecraft/cow01.mp3"></audio></div>'
+const whiteKing = '<div class="piece" id="king"><img src="images/pieces/steveKing.png"></img><audio src="sounds Minecraft/steveAndAlexWalking.mp3"></audio></div>'
+const whiteQueen = '<div class="piece" id="queen"><img src="images/pieces/alexQueen.jpg"></img><audio src="sounds Minecraft/steveAndAlexWalking.mp3"></audio></div>'
 const whiteKnight = '<div class="piece" id="knight"><img src="images/pieces/cowKnight.png"></img><audio src="sounds Minecraft/cow01.mp3"></audio></div>'
 const whiteRook = '<div class="piece" id="rook"><img src="images/pieces/sheepTower.png"></img><audio src="sounds Minecraft/sheep01.mp3"></audio></div>'
 const whiteBishop = '<div class="piece" id="bishop"><img src="images/pieces/wolfBishop.png"></img><audio src="sounds Minecraft/dog01.mp3"></audio></div>'
