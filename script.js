@@ -1,7 +1,7 @@
 // Obtenha todas as divs com a classe .modal-item
 const modalItems = document.querySelectorAll('.modal-item');
 const buttonSound = "sounds Minecraft/ButtonSound.mp3"
-
+let biome = localStorage.getItem("minecraftBiome")
 
 // Adicione um ouvinte de eventos de clique a cada div
 modalItems.forEach((modalItem, index) => {
@@ -13,8 +13,11 @@ modalItems.forEach((modalItem, index) => {
                 
                 tocarEfeitoSonoro(buttonSound)
                 if(playerGo === "white"){
+                    if(biome === "nether"){
+                        evolvePawn(blackRookNether,peaoASerPromovido);
+                    }else{
                     evolvePawn(blackRook,peaoASerPromovido);
-                
+                    }
                 }else{
                     evolvePawn(whiteRook,peaoASerPromovido);
                 }
@@ -23,9 +26,12 @@ modalItems.forEach((modalItem, index) => {
                 // Chame o método com o segundo parâmetro
                 tocarEfeitoSonoro(buttonSound)
                 if(playerGo === "white"){
-                    evolvePawn(blackKnight,peaoASerPromovido);
-                   
+                    if(biome === "nether"){
+                        evolvePawn(blackKnightNether,peaoASerPromovido);
                     }else{
+                    evolvePawn(blackKnight,peaoASerPromovido);
+                    }
+                }else{
                         evolvePawn(whiteKnight, peaoASerPromovido);
                     }
                
@@ -34,8 +40,12 @@ modalItems.forEach((modalItem, index) => {
                 // Chame o método com o terceiro parâmetro
                 tocarEfeitoSonoro(buttonSound)
                 if(playerGo === "white"){
-                    evolvePawn(blackBishop,peaoASerPromovido);
+                    if(biome === "nether"){
+                        evolvePawn(blackBishopNether,peaoASerPromovido);
                     }else{
+                    evolvePawn(blackBishop,peaoASerPromovido);
+                    }
+                }else{
                        
                         evolvePawn(whiteBishop, peaoASerPromovido);
                     }
@@ -46,8 +56,12 @@ modalItems.forEach((modalItem, index) => {
                 // Chame o método com o quarto parâmetro
                 tocarEfeitoSonoro(buttonSound)
                 if(playerGo === "white"){
-                    evolvePawn(blackQueen,peaoASerPromovido);
+                    if(biome === "nether"){
+                        evolvePawn(blackQueenNether,peaoASerPromovido);
                     }else{
+                    evolvePawn(blackQueen,peaoASerPromovido);
+                    }
+                }else{
                         evolvePawn(whiteQueen, peaoASerPromovido);
                      
                     }
@@ -119,16 +133,29 @@ modalItems.forEach((item, index) => {
     
 });
 }else {
+    if(biome === "nether"){
     modalItems.forEach((item, index) => {
     if(index === 0)
-    item.style.backgroundImage = `url('images/pieces/endermanTower.jpg')`;
+    item.style.backgroundImage = `url('images/pieces/ghastRook.png')`;
     else if(index === 1)
-    item.style.backgroundImage = `url('images/pieces/creeperKnight.jpg')`;
+    item.style.backgroundImage = `url('images/pieces/blazeKnight.png')`;
     else if(index === 2)
-    item.style.backgroundImage = `url('images/pieces/skeletonBishop.png')`;
+    item.style.backgroundImage = `url('images/pieces/witherSkeletonBishop.png')`;
     else if(index === 3)
-    item.style.backgroundImage = `url('images/pieces/dragonQueen.png')`;
+    item.style.backgroundImage = `url('images/pieces/witherQueen.png')`;
 });
+    }else{
+        modalItems.forEach((item, index) => {
+            if(index === 0)
+            item.style.backgroundImage = `url('images/pieces/endermanTower.jpg')`;
+            else if(index === 1)
+            item.style.backgroundImage = `url('images/pieces/creeperKnight.jpg')`;
+            else if(index === 2)
+            item.style.backgroundImage = `url('images/pieces/skeletonBishop.png')`;
+            else if(index === 3)
+            item.style.backgroundImage = `url('images/pieces/dragonQueen.png')`;
+});
+    }
 }
 }
 

@@ -7,7 +7,7 @@ const whitePawn = '<div class="piece" id="pawn"><img src="images/pieces/villager
 
 const blackKing = '<div class="piece" id="king"><img src="images/pieces/herobrineKing.jpg"></img><audio src="sounds Minecraft/cave01.mp3"></audio></div>'
 const blackQueen = '<div class="piece" id="queen"><img src="images/pieces/dragonQueen.png"></img><audio src="sounds Minecraft/dragon02.mp3"></audio></div>'
-const blackKnight = '<div class="piece" id="knight"><img src="images/pieces/creeperKnight.jpg"></img><audio src="sounds Minecraft/creeper01.mp3"></audio><audio class="audio-death" src="sounds Minecraft/"></audio></div>'
+const blackKnight = '<div class="piece" id="knight"><img src="images/pieces/creeperKnight.jpg"></img><audio src="sounds Minecraft/creeper01.mp3"></audio></div>'
 const blackRook = '<div class="piece" id="rook"><img src="images/pieces/endermanTower.jpg"></img><audio src="sounds Minecraft/enderman01.mp3"></audio></div>'
 const blackBishop = '<div class="piece" id="bishop"><img src="images/pieces/skeletonBishop.png"></img><audio src="sounds Minecraft/skeleton01.mp3"></audio></div>'
 const blackPawn = '<div class="piece" id="pawn"><img src="images/pieces/zombiePawn.png"></img><audio src="sounds Minecraft/zombie03.mp3"></audio></div>'
